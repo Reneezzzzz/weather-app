@@ -1,0 +1,51 @@
+.title {
+  display: inline-block;
+  margin-top: 85px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.daily-item {
+  background-color: aliceblue;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  align-items: center;
+  font-size: 1rem;
+  height: 200px;
+}
+
+.icon-small {
+  width: 4rem;
+}
+
+.day {
+  color: #212121;
+  flex: 1 1;
+  font-weight: 600;
+  margin-left: 1rem;
+}
+
+.description {
+  flex: 1 1;
+  text-align: right;
+  margin-right: 1rem;
+}
+
+label {
+  margin-right: 10px;
+}
+
+.min-max {
+  color: #757575;
+}
+.accordion {
+  display: grid;
+  max-width: 1080px;
+  grid-template-columns: repeat(auto-fit, minmax(153px, 100px));
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  margin: 0 auto;
+}

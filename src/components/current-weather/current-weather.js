@@ -5,7 +5,7 @@ const CurrentWeather = ({ data }) => {
       <div className="top">
         <div>
           <p className="city">{data.city}</p>
-          <p className="weather-description">Sunny</p>
+          <p className="weather-description">{data.weather[0].description}</p>
         </div>
         <img
           alt="weather"

@@ -3,9 +3,12 @@
   border-radius: 6px;
   /* box-shadow: 10px -2px 20px 2px rgba(0, 0, 0, 0.047); */
   color: aliceblue;
-  background-color: rgba(51, 51, 51, 0.447);
-  margin: 40px auto 0 auto;
+  background-color: rgba(51, 51, 51, 0.578);
+  /* margin: 0 auto 0 auto; */
   padding: 20px 20px 20px;
+  /* float: right; */
+  height: 320px;
+  align-self: flex-end;
 }
 
 .top,
@@ -13,19 +16,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 30px;
+}
+.bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.622);
 }
 
 .city {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.5rem;
   line-height: 1;
-  margin: 0;
+  margin: 10px 0;
   letter-spacing: 1px;
 }
 
 .weather-description {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1rem;
   line-height: 1;
   margin: 0;
 }
@@ -44,6 +51,7 @@
 .details {
   width: 100%;
   padding-left: 20px;
+  /* margin-bottom: 10px; */
 }
 
 .parameter-row {
@@ -65,4 +73,6 @@
 
 .parameter-label.top {
   border-bottom: 1px solid rgb(249, 249, 249);
+  margin-bottom: 5px;
+  font-size: 0.9rem;
 }
