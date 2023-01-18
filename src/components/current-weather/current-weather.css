@@ -16,7 +16,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 .bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.622);
@@ -31,7 +31,7 @@
 }
 
 .weather-description {
-  font-weight: 400;
+  font-weight: 200;
   font-size: 1rem;
   line-height: 1;
   margin: 0;
@@ -61,7 +61,10 @@
 
 .parameter-label {
   text-align: left;
-  font-weight: 400;
+  font-weight: 240;
+
+  display: flex;
+  align-items: center;
   font-size: 12px;
 }
 

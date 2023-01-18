@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { AsyncPaginate } from "react-select-async-paginate";
 import { GEO_API_URL, geoApiOptions } from "../api";
+import { UilLocationPoint } from "@iconscout/react-unicons";
 
 const Search = ({ onSearchChange }) => {
   const [search, setSearch] = useState(null);
@@ -32,13 +33,19 @@ const Search = ({ onSearchChange }) => {
       .catch((err) => console.error(err));
   };
   return (
-    <AsyncPaginate
-      placeholder="search for city"
-      debounceTimeout={500}
-      value={search}
-      onChange={handleOnChange}
-      loadOptions={loadOptions}
-    />
+    <>
+      <AsyncPaginate
+        placeholder="search for city"
+        debounceTimeout={500}
+        value={search}
+        onChange={handleOnChange}
+        loadOptions={loadOptions}
+      />
+      <UilLocationPoint
+        size={25}
+        className="point cursor-pointer hover:scale-110"
+      />
+    </>
   );
 };
 export default Search;

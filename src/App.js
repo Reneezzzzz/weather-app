@@ -3,11 +3,16 @@ import CurrentWeather from "./components/current-weather/current-weather";
 import Search from "./components/search";
 import { WEATHER_API_URL, KEY } from "./api";
 import { useState } from "react";
-import Forecast from "./forecast/forecast";
+import Forecast from "./tabs/forecast/forecast";
+import BasicTabs from "./tabs/tabs";
+import LeftButtons from "./components/left-buttons";
+// import { useEffect } from "react";
 function App() {
   const [currentWeather, setCurrentWeather] = useState(null);
   const [forecast, setForecast] = useState(null);
-  const [img, setImg] = useState(null);
+  const [img, setImg] = useState(
+    "https://images.unsplash.com/photo-1469122312224-c5846569feb1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1978&q=80"
+  );
   const handleOnSearchChange = (searchData) => {
     // to do
     console.log(searchData);
@@ -38,7 +43,7 @@ function App() {
       .catch((err) => console.log(err));
   };
   // console.log(img);
-  console.log(forecast);
+  console.log("running!");
   // console.log(currentWeather);
   return (
     <div
@@ -49,8 +54,13 @@ function App() {
       }}
     >
       <Search onSearchChange={handleOnSearchChange} />
+
       {currentWeather && <CurrentWeather data={currentWeather} />}
-      {forecast && <Forecast data={forecast} />}
+      {/* {forecast && <Forecast data={forecast} />} */}
+      <LeftButtons />
+      <div className="container-1">
+        {forecast && <BasicTabs data={forecast} />}
+      </div>
     </div>
   );
 }

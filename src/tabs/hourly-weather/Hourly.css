@@ -1,0 +1,40 @@
+.hourly {
+  /* display: grid;
+    max-width: 1080px;
+    grid-template-columns: repeat(auto-fit, minmax(153px, 100px));
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;*/
+  /* width: 100%; */
+  width: 90vw;
+  display: grid;
+  grid-auto-flow: column;
+  overflow-x: scroll;
+  /* gap: 1rem; */
+  padding-bottom: 0.25rem;
+}
+.hourly-item {
+  background-color: aliceblue;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  align-items: center;
+  font-size: 1rem;
+  height: 200px;
+  min-width: 140px;
+  max-width: 170px;
+}
+.description {
+  /* flex: 1 1; */
+  text-align: center;
+  /* margin-right: 1rem; */
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.hour {
+  color: #212121;
+  flex: 1 1;
+  font-weight: 600;
+  margin-left: 1rem;
+}

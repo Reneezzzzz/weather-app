@@ -1,5 +1,5 @@
 .container {
-  max-width: 1080px;
+  max-width: 900px;
   min-width: fit-content;
   margin: 20px auto;
   height: 400px;
@@ -9,4 +9,20 @@
   display: flex;
   flex-direction: column;
   row-gap: 17px;
+  position: relative;
+}
+.container-1 {
+  width: 94vw;
+  margin: 0 auto;
+}
+.css-b62m3t-container {
+  width: 92%;
+  margin: 0 10% 0 0;
+}
+
+.point {
+  position: absolute;
+  right: 1%;
+  fill: rgb(248, 248, 247);
+  top: 2%;
 }
